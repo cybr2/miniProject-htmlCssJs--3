@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BOOK-LIST</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS only -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3ff475d54b.js" defer crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <div class="container mt-4">
+            <h1 class="dispaly-4 text-center">
+                <i class="fas fa-book-open text-primary"></i> My <span class="text-primary">Book</span>
+            </h1>    
+            <form action="" id="book-form">
+                <div class="form-group mb-2">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" class="form-control">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" class="form-control">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="isbn">ISBN#</label>
+                    <input type="text" id="isbn" class="form-control">
+                </div>
+                <div class="d-grid ">
+                    <input type="submit" class="btn btn-primary btn-lg" value="ADD BOOK">
+                </div>
+            </form>
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN#</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+        </div>
+
+
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>
